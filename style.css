@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 1em;
+}
+button, input, textarea, select {
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+.accessible {
+  background-color: black;
+  color: yellow;
+  font-size: 1.4em;
+}

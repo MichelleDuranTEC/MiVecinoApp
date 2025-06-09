@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>MiVecino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button onclick="toggleAccessibility()">Modo accesible</button>
+  <h1>Bienvenido a MiVecino</h1>
+
+  <section>
+    <h2>Publicar aviso</h2>
+    <input id="titulo" placeholder="Título" />
+    <textarea id="descripcion" placeholder="Descripción"></textarea>
+    <button onclick="publicarAviso()">Publicar</button>
+  </section>
+
+  <section>
+    <h2>Reportar incidente</h2>
+    <select id="tipo">
+      <option value="robo">Robo</option>
+      <option value="ruido">Ruido</option>
+    </select>
+    <textarea id="detalle" placeholder="Descripción del incidente"></textarea>
+    <button onclick="reportar()">Reportar</button>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
